@@ -78,7 +78,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactClient",
-        policy => policy.WithOrigins("http://localhost:5173")
+        policy => policy.WithOrigins("http://localhost:5173", "https://gray-smoke-001719703.4.azurestaticapps.net")
                         .AllowAnyHeader()
                         .AllowAnyMethod()
                         .AllowCredentials());
